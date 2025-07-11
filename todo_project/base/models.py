@@ -1,11 +1,11 @@
 from django.db import models
 
 # Create your models here.
-class todo(models.Model):
+class Todo(models.Model):
     name = models.CharField(max_length=300)
     description = models.TextField()
     status = models.CharField(max_length=300)
 
 
-class todo_type(models.Model):
+class TodoType(models.Model):
     name = models.CharField(max_length=100)
